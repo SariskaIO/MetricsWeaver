@@ -18,7 +18,7 @@ Conference metadata is stored in DynamoDB when a conference is identified, and s
 [Read more about RTC server here](https://github.com/SariskaIO/rtcstats-server)
 
 
-### ENV variables:
+### ENV variables required:
 
 -  `DEPLOYMENT_ENV`
 -  `REDSHIFT_USER`
