@@ -6,7 +6,8 @@ Welcome to Sariska Analytics, an advanced user analytics dashboard that builds u
 Explore the comprehensive insights offered by Sariska Analytics at [https://analytics.sariska.io](https://analytics.sariska.io).
 
 ## Visualize RAW RTC Metrics
-For those who wish to delve into the raw RTC metrics and analyze them directly, access the RTC Visualizer at [https://rtc-visualizer.sariska.io/](https://rtc-visualizer.sariska.io/).
+Explore the comprehensive insights offered by Sariska Analytics at [https://analytics.sariska.io](https://analytics.sariska.io/debugging).
+
 
 ### Key Features
 - **Audio/Video Quality Analysis:** Delve into detailed metrics to assess the quality of audio and video streams during calls.
@@ -18,17 +19,10 @@ For those who wish to delve into the raw RTC metrics and analyze them directly, 
 - **Call Quality Score:** The call quality score is determined by taking a weighted average of parameters such as audio/video quality analysis, user location tracking, IP address analysis, system speed metrics, connection health, and conference drops.
 
 ### Scalable Backend
-The backend of this project is supported by an efficient and scalable real-time data processing pipeline. This pipeline utilizes services like Amazon Kinesis Data Firehose to seamlessly deliver streaming data in real-time to various destinations, including Amazon Simple Storage Service (Amazon S3), Amazon Redshift etc.
+The backend of this project is supported by an efficient and scalable real-time data processing pipeline. This pipeline utilizes services like Amazon Kinesis Data Firehose to seamlessly deliver streaming data in real-time to various destinations. for raw rtc metrics it pipes data per user basic to Amazon Simple Storage Service (Amazon S3) as a file  and for aggreation it also pushes data stream to Amazon Redshift.
 
 Conference metadata is stored in DynamoDB when a conference is identified, and subsequent queries are directed to Amazon S3 for each participant dump retrieval. This ensures a robust and dynamic system for managing conference data.
-[Read more here](https://github.com/SariskaIO/rtcstats-server)
-
-### How to Use
-1. **Dashboard Access:**
-   Visit [https://analytics.sariska.io](https://analytics.sariska.io) to explore the analytics dashboard.
-
-2. **Raw Metrics Visualization:**
-	For a more technical approach and access to raw RTC metrics, please visit https://rtc-visualizer.sariska.io/. You can also directly visualize live raw metrics by navigating to chrome://webrtc-internals/ in your browser during the conference call.
+[Read more about RTC server here](https://github.com/SariskaIO/rtcstats-server)
 
 ### Contribution
 Contributions to enhance and expand the capabilities of this project are welcome. Feel free to fork the repository, make improvements, and submit pull requests.
