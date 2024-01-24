@@ -18,6 +18,21 @@ Conference metadata is stored in DynamoDB when a conference is identified, and s
 [Read more about RTC server here](https://github.com/SariskaIO/rtcstats-server)
 
 
+ENV variables:
+
+-  `DEPLOYMENT_ENV`
+-  `REDSHIFT_USER`
+-  `REDSHIFT_PASSWORD`
+-  `REDSHIFT_DATABASE`
+-  `REDSHIFT_HOST`
+-  `JWT_TOKEN_SECRET_VALUE`
+-  `RTCSTATS_METADATA_TABLE`
+-  `RTCSTATS_S3_BUCKET`
+-  `USERS_FILE`
+-  `RTCSTATS_FILES_ENDPOINT`
+-  `AWS_REGION`
+-  `APP_PORT`
+
 ## Access the Dashboard
 Explore User Metrics here  at [https://analytics.sariska.io](https://analytics.sariska.io).
 
