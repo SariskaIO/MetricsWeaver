@@ -21,7 +21,7 @@ Conference metadata is stored in DynamoDB when a conference is identified, and s
 ## Access the Dashboard
 Explore User Metrics here  at [https://analytics.sariska.io](https://analytics.sariska.io).
 
-## Visualize RAW RTC Metrics
+## Visualize raw RTC Metrics
 Explore detailed raw metris at [https://analytics.sariska.io/debugging](https://analytics.sariska.io/debugging).
 
 ### Contribution
