@@ -1,6 +1,6 @@
 # Sariska Analytics
 
-Welcome to Sariska Analytics, an advanced user analytics dashboard that builds upon the RTC Visualizer project. The goal is to extract the key user-friendly metrics by analyzing raw RTC metrics(WebRTC peerconnection getStats() API) uploaded by each user during the conference call.
+Welcome to Sariska Analytics, where we've taken the RTC Visualizer project to new heights. Our focus is on extracting user-friendly metrics by analyzing raw RTC metrics (WebRTC peerconnection getStats() API), uploaded for each user during the conference call at certain intervals
 
 ### Key Features
 - **Audio/Video Quality Analysis:** Delve into detailed metrics to assess the quality of audio and video streams during calls.
@@ -29,5 +29,4 @@ Contributions to enhance and expand the capabilities of this project are welcome
 
 ### Feedback and Support
 For any questions, feedback, or support, please reach out to the Sariska Analytics team at [support@sariska.io](mailto:support@sariska.io).
-
 Thank you for choosing Sariska Analytics to empower your RTC analytics journey!
