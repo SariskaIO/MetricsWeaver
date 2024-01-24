@@ -1,13 +1,6 @@
 # Sariska Analytics
 
-Welcome to Sariska Analytics, an advanced user analytics dashboard that builds upon the RTC Visualizer project. Our platform utilizes the WebRTC peer connection getStats() API to deliver enhance user experience by providing detailed metrics and analysis of audio/video quality within calls.
-
-## Access the Dashboard
-Explore the comprehensive insights offered by Sariska Analytics at [https://analytics.sariska.io](https://analytics.sariska.io).
-
-## Visualize RAW RTC Metrics
-Explore the comprehensive insights offered by Sariska Analytics at [https://analytics.sariska.io](https://analytics.sariska.io/debugging).
-
+Welcome to Sariska Analytics, an advanced user analytics dashboard that builds upon the RTC Visualizer project. The goal is to extract the key user-friendly metrics by analyzing raw RTC metrics(WebRTC peerconnection getStats() API) uploaded by each user during the conference call.
 
 ### Key Features
 - **Audio/Video Quality Analysis:** Delve into detailed metrics to assess the quality of audio and video streams during calls.
@@ -19,10 +12,17 @@ Explore the comprehensive insights offered by Sariska Analytics at [https://anal
 - **Call Quality Score:** The call quality score is determined by taking a weighted average of parameters such as audio/video quality analysis, user location tracking, IP address analysis, system speed metrics, connection health, and conference drops.
 
 ### Scalable Backend
-The backend of this project is supported by an efficient and scalable real-time data processing pipeline. This pipeline utilizes services like Amazon Kinesis Data Firehose to seamlessly deliver streaming data in real-time to various destinations. for raw rtc metrics it pipes data per user basic to Amazon Simple Storage Service (Amazon S3) as a file  and for aggreation it also pushes data stream to Amazon Redshift.
+The backend of this project is supported by an efficient and scalable real-time data processing pipeline. This pipeline utilizes services like Amazon Kinesis Data Firehose to seamlessly deliver streaming data in real-time to various destinations. For raw RTC metrics, it pipes data per user basis to Amazon Simple Storage Service (Amazon S3) as a file, and for aggregation, it also pushes the data stream to Amazon Redshift.
 
 Conference metadata is stored in DynamoDB when a conference is identified, and subsequent queries are directed to Amazon S3 for each participant dump retrieval. This ensures a robust and dynamic system for managing conference data.
 [Read more about RTC server here](https://github.com/SariskaIO/rtcstats-server)
+
+
+## Access the Dashboard
+Explore User Metrics here  at [https://analytics.sariska.io](https://analytics.sariska.io).
+
+## Visualize RAW RTC Metrics
+Explore detailed raw metris at [https://analytics.sariska.io](https://analytics.sariska.io/debugging).
 
 ### Contribution
 Contributions to enhance and expand the capabilities of this project are welcome. Feel free to fork the repository, make improvements, and submit pull requests.
