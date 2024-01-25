@@ -1,8 +1,7 @@
 import express from 'express';
 import jwt from 'jsonwebtoken';
-
-const users = [{ username: process.env.username, password: process.env.password }];
-const secretKey = process.env.JWT_SECRET // Use JWT_SECRET from env variable or a fallback value
+const users = [{ username: process.env.ADMIN_USER_NAME, password: process.env.ADMIN_USER_PASSWORD }];
+const secretKey = process.env.JWT_TOKEN_SECRET_VALUE // Use JWT_SECRET from env variable or a fallback value
 const router = express.Router();
 
 router.post('/', (req, res, next) => {
@@ -11,8 +10,9 @@ router.post('/', (req, res, next) => {
   // Implement your own logic for checking the username and password here
   const isValidUser = checkUserCredentials(username, password);
 
+  console.log("isValidUser",isValidUser);
   if (isValidUser) {
-    // Generate JWT token using the JWT_SECRET from environment variable
+    // Generate JWT tok en using the JWT_SECRET from environment variable
     const token = generateToken(username);
 
     // Send JSON response with token

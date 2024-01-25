@@ -7,7 +7,7 @@ import store from './app/store.js';
 window.store = store;
 
 // Import other components (e.g., Search)
-import Login from './app/search/components/search-form';
+import Login from './app/search/components/login-form';
 import Dashboard from './app/search/components/dashboard';
 
 // Define a function to check if the user is authenticated

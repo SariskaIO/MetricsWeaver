@@ -11,7 +11,11 @@ const isProdEnv = () => env === 'production';
 const config = {
   context: path.resolve(__dirname, srcPath),
   entry: {
-    app: './index.js',
+    app: [
+      'webpack-dev-server/client?http://localhost:9000/', // Enable WebSocket connection
+      'webpack/hot/dev-server', // Enable HMR (Hot Module Replacement)
+      './index.js',
+    ],
   },
   output: {
     path: path.resolve(__dirname, outputPath),
@@ -62,6 +66,7 @@ const config = {
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify(`${env}`),
     }),
+    new webpack.HotModuleReplacementPlugin(), // Enable HMR
   ],
 
   devtool: isProdEnv() ? 'source-map' : 'eval-source-map',
@@ -70,7 +75,11 @@ const config = {
     contentBase: path.resolve(__dirname, outputPath),
     compress: true,
     port: 9000, // Adjust the port as needed
-    hot: true,
+    hot: true, // Enable HMR on the devServer
+    client: {
+      overlay: true,
+      progress: true,
+    }
   },
 };
 
