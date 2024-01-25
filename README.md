@@ -1,9 +1,9 @@
 # Sariska Analytics
 
-Welcome to Sariska Analytics, where we've taken the RTC Visualizer project to new heights. Our focus is on extracting user-friendly metrics by analyzing raw RTC metrics (WebRTC peerconnection getStats() API), uploaded for each user during the conference call at certain intervals
+Welcome to Sariska Analytics, where we've taken the [RTC Visualizer](https://github.com/SariskaIO/rtc-visualizer) project to new heights. Our focus is on extracting user-friendly metrics by analyzing raw RTC metrics (WebRTC peerconnection getStats() API), uploaded for each user during the conference call at certain intervals. 
 
 ### Key Features
-- **Audio/Video Quality Analysis:** Delve into detailed metrics to assess the quality of audio and video streams during calls.
+- **Audio/Video Quality Analysis:** Delve into detailed metrics to assess the quality of audio and video streams during calls, For example, the percentage of audio/video freeze.
 - **User Location Tracking:** Gain insights into the geographical locations of users, enhancing your understanding of the global reach of your platform.
 - **IP Address Analysis:** Identify and track IP addresses to enhance security and troubleshoot potential issues.
 - **System Speed Metrics:** Analyze the speed of user systems to optimize the performance of your application.
@@ -18,11 +18,26 @@ Conference metadata is stored in DynamoDB when a conference is identified, and s
 [Read more about RTC server here](https://github.com/SariskaIO/rtcstats-server)
 
 
+### ENV variables required:
+
+-  `DEPLOYMENT_ENV`
+-  `REDSHIFT_USER`
+-  `REDSHIFT_PASSWORD`
+-  `REDSHIFT_DATABASE`
+-  `REDSHIFT_HOST`
+-  `JWT_TOKEN_SECRET_VALUE`
+-  `RTCSTATS_METADATA_TABLE`
+-  `RTCSTATS_S3_BUCKET`
+-  `USERS_FILE`
+-  `RTCSTATS_FILES_ENDPOINT`
+-  `AWS_REGION`
+-  `APP_PORT`
+
 ## Access the Dashboard
 Explore User Metrics here  at [https://analytics.sariska.io](https://analytics.sariska.io).
 
-## Visualize RAW RTC Metrics
-Explore detailed raw metris at [https://analytics.sariska.io](https://analytics.sariska.io/debugging).
+## Visualize raw RTC Metrics
+Explore detailed raw metris at [https://analytics.sariska.io/debugging](https://analytics.sariska.io/debugging).
 
 ### Contribution
 Contributions to enhance and expand the capabilities of this project are welcome. Feel free to fork the repository, make improvements, and submit pull requests.
