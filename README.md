@@ -8,7 +8,6 @@ Welcome to Sariska Analytics, where we've taken the [RTC Visualizer](https://git
 - **Facial Landmarks Analysis** The system takes snapshots of the participant's facial expressions at intervals during the call, facilitating a more precise analysis of their expression
 - **IP Address Analysis:** Identify and track IP addresses to enhance security and troubleshoot potential issues.
 - **System Speed Metrics:** Analyze the speed of user systems to optimize the performance of your application.
-- **Connection Health Monitoring:** Stay informed about the health of network connections to ensure a seamless user experience.
 - **Conference Drop Reasons:** Understand and address conference drop issues with comprehensive data on drop reasons.
 - **Call Quality Score:** The call quality score is determined by taking a weighted average of parameters such as audio/video quality analysis, user location tracking, IP address analysis, system speed metrics, connection health, and conference drops.
 
