@@ -5,6 +5,7 @@ Welcome to Sariska Analytics, where we've taken the [RTC Visualizer](https://git
 ### Key Features
 - **Audio/Video Quality Analysis:** Delve into detailed metrics to assess the quality of audio and video streams during calls, For example, the percentage of audio/video freeze.
 - **User Location Tracking:** Gain insights into the geographical locations of users, enhancing your understanding of the global reach of your platform.
+- **Facial Landmarks Analysis** The system takes snapshots of the participant's facial expressions at intervals during the call, facilitating a more precise analysis of their expression
 - **IP Address Analysis:** Identify and track IP addresses to enhance security and troubleshoot potential issues.
 - **System Speed Metrics:** Analyze the speed of user systems to optimize the performance of your application.
 - **Connection Health Monitoring:** Stay informed about the health of network connections to ensure a seamless user experience.
